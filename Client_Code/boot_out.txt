@@ -1,0 +1,4 @@
+Adafruit CircuitPython 10.1.4 on 2026-03-09; Raspberry Pi Pico 2 W with rp2350a
+Board ID:raspberry_pi_pico2_w
+UID:5189F519B5C28404
+MAC:2C:CF:67:DE:FD:C1
