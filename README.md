@@ -11,3 +11,7 @@ At the time of design day, everything functions as follows:
 1. Starting now the teacher can send a message to the students using the broadcast functions
     * I wish I could have done this message sending via USB to the hub so it knows what to send. As of now it will have to be preprogrammed with what to send after boot.
 1. Both picos sit in a while loop doing simple processing
+
+### TO DOWNLOAD AND USE CONTENT
+
+Please see the releases tab on the right side of your screen. This should download a zip folder that contains folders of code that needs to be flashed to the teacher and student picos.
