@@ -5,7 +5,7 @@ from menu import Menu, Action, Toggle, Number, Submenu
 from time import sleep
 
 # ── Network config ────────────────────────────────────────────────────────────
-
+# Ignore if not using WiFi
 WIFI_SSID     = "SPARK_HUB"      # Must match AP_SSID in hub.py
 WIFI_PASSWORD = "sparkpass"       # Must match AP_PASSWORD in hub.py
 HUB_IP        = "192.168.4.1"    # Fixed AP gateway — never changes
@@ -26,12 +26,12 @@ pin_pairs = [
 
 # ── Startup ───────────────────────────────────────────────────────────────────
 
-screen = Display()
-menu   = Menu(screen)
+screen = Display()			#init display
+menu   = Menu(screen)		#init menu
 
 for in_pin, out_pin in pin_pairs:
     menu.add_mirror(out_pin, in_pin)
 
 # ── Main menu ─────────────────────────────────────────────────────────────────
 
-menu.show("MENU      S.P.A.R.K.", main_menu)
+menu.show("MENU      S.P.A.R.K.", main_menu)	#start main while loop processing screen

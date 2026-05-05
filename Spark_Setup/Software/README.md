@@ -27,3 +27,4 @@ Everything is done using classes. There are currently 5 different options for me
 	- List of possible projects
 - Image = Will display a image on the screen and will stay until back button is pressed\
 	- Picture of current project
+The menu is processed using a stack. Anytime the user enters a submenu, it is noted on the stack. When the user would like to move back a menu, we pop the latest item from the stack.
