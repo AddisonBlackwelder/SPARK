@@ -16,10 +16,10 @@ from time import sleep
 
 # ── Button pins ───────────────────────────────────────────────────────────────
 
-BTN_UP     = board.GP27
-BTN_DOWN   = board.GP13
-BTN_SELECT = board.GP10
-BTN_BACK   = board.GP22
+BTN_UP     = board.GP20
+BTN_DOWN   = board.GP27
+BTN_SELECT = board.GP22
+BTN_BACK   = board.GP21
 
 DEBOUNCE   = 0.2   # seconds between button reads
 

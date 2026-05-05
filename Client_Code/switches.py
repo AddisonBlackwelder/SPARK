@@ -1,13 +1,12 @@
+import board
+import digitalio
 
 def init():
     #input, output
     pin_pairs = [
-        (board.GP0, board.GP1),
-        (board.GP2, board.GP3),
-        (board.GP4, board.GP5),
-        (board.GP6, board.GP7),
-        (board.GP14, board.GP15),
+        (board.GP1, board.GP0),
         ]
+    mirrored_switches = []
         
     for input_pin, output_pin in pin_pairs:
         _input = digitalio.DigitalInOut(input_pin)
@@ -17,6 +16,7 @@ def init():
         _output = digitalio.DigitalInOut(output_pin)
         _output.direction = digitalio.Direction.OUTPUT
         _output.value = False
+        mirrored_switches.append((_input, _output))
         
         print(f"[INFO] Added switch mirror: {input_pin} --> {output_pin}")
 
