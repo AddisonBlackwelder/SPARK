@@ -1,22 +1,29 @@
 ## All code here is for the pico placed on the board
 
 ### code.py
-This code will run on bootup. Will init screen, menu, and pins (for pin mirroring)
+This python script will run once as board starts up. It is responsible for initalizing all network usage and pin pairs for switch mirroring. If you would like to change any IPs or ports, this is the file to mess with.
 
 ### display.py
-Used for any display related code
+This file is what drives the display. It defines a class that is used to add text and images to the display as we see fit. This is also where we defines what pins are used to communicate with the display. The functions can be called by the user if they would like to add JUST text, or a an image. A more user friendly version of these functions can be found in menu.py.
+P.S. The display currently updates all the time. I couldn't quite figure out a variable refresh rate. I assume this would greatly reduce power consuption.
 
 ### main_loop.py
-This function is run every 20ms roughly. Its run after the display checks for updates
+This script runs every tick_rate second(s). Changing the value at the top of this value chages how often the Pico checks for updates within the system; levers changing status, buttons pressed, display updating.
 
 ### menu_options.py
-This is what constructs the menu. Everything is done using python arrays
+If you would like to add more menu options to the screen, this is the file you should change. Everything is done using simple python arrays. All of the different menu options can be found in menu.py, they are also explained below.
 
 ### menu.py
 This is the big boy file. Used for anything menu related.
-Everything is done using classes. There are 5 different options for menu items:
-- Action = runs a function
-- Toggle = Has a binary value that is toggled when clicked
+Everything is done using classes. There are currently 5 different options for menu items. Below is each option as well as an example.
+
+- Action = Runs a function when selected
+	- Check battery level using custom function.
+- Toggle = Changes a binary value (true or false) when toggled.
+	- WiFi enabled or disabled.
 - Number = Can be a range of numbers where each time it is clicked, the value changes by *step* and can range from *min* to *max*
+	- Display brightness level (Not implemented)
 - Submenu = Opens a submenu and adds old menu to stack
-- Image = Will display a image on the screen and will stay until back button is pressed
+	- List of possible projects
+- Image = Will display a image on the screen and will stay until back button is pressed\
+	- Picture of current project
