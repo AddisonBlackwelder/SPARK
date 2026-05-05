@@ -3,7 +3,6 @@ from menu_options import main_menu
 from display import Display
 from menu import Menu, Action, Toggle, Number, Submenu
 from time import sleep
-import switches
 
 # ── Network config ────────────────────────────────────────────────────────────
 
