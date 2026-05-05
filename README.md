@@ -2,6 +2,7 @@
 
 There are two folders in this repo:
 - Spark_Setup - These files NEED to be added to each pico that are on the boards. This software allows the LEDs below each flip switch to change based on switch state. This software also drives the display on the board.
+	- Note: ./Software contains all python scripts need for board to run. ./Firmware contins a .uf2 file that installs Micropython onto the pico.
 - Optional_Internet_Hub - If you choose to not setup the teacher hub software, this folder can be ignored. This software is used by flashing onto a separate pico that will attempt to connect to all student boards it finds close by. The teacher can then use this connection to commutation with the students by controlling their boards.
 	
 These folders are explained more once clicked on above.
