@@ -13,7 +13,7 @@ Please see the releases tab on the right side of your screen. This should downlo
 
 1. Download ZIP folder as shown above.
 1. Unzip the folder to an easy to access location.
-1. Go to Spark_Setup -> Firmware and grab the only file in this folder.
+1. Open Spark_Setup and locate the .uf2 file.
 1. Plug your pico into your computer while holding the only button on the top of the Pico. This should open file explorer on your computer screen.
 	- If nothing opens, open File Explorer manually and look for a drive called RPI-RP2.
 1. Copy the file stored at Spark_Setup/Firmware/ and copy it to the folder that popped up after plugging in your pico.
