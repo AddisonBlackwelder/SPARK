@@ -18,13 +18,13 @@ This is the big boy file. Used for anything menu related.
 Everything is done using classes. There are currently 5 different options for menu items. Below is each option as well as an example.
 
 - Action = Runs a function when selected
-	- Check battery level using custom function.
+	- Check battery level using custom a function.
 - Toggle = Changes a binary value (true or false) when toggled.
 	- WiFi enabled or disabled.
 - Number = Can be a range of numbers where each time it is clicked, the value changes by *step* and can range from *min* to *max*
 	- Display brightness level (Not implemented)
-- Submenu = Opens a submenu and adds old menu to stack
+- Submenu = Opens a sub menu and adds old menu to stack
 	- List of possible projects
-- Image = Will display a image on the screen and will stay until back button is pressed\
+- Image = Will display an image on the screen and will stay until back button is pressed\
 	- Picture of current project
-The menu is processed using a stack. Anytime the user enters a submenu, it is noted on the stack. When the user would like to move back a menu, we pop the latest item from the stack.
+The menu is processed using a stack. Anytime the user enters a sub menu, it is noted on the stack. When the user would like to move back a menu, we pop the latest item from the stack.
