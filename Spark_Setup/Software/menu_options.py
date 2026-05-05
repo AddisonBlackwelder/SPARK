@@ -20,6 +20,7 @@ intro_XOR = [
     Image("Picture", "images/gates/xor.bmp")
 ]
 
+#TODO Add the following project pictures and desc.
 project_1 = [
     
 ]
