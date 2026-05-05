@@ -1,17 +1,21 @@
 ### Team 42 SPARK - Software
 
-Code is split into two types, client and hub. the client code gets flased onto the pico that is connected to the board and the teacher code gets flashed onto a pico that connects via USB to the teachers laptop.
-At the time of design day, everything functions as follows:
-
-1. Hub starts us first to give ample time for system to boot
-1. Client starts up and attempts to connect to a wifi access point provided by the hub
-    * Connection Succsessful - Client sends a hello message and waits for an ACK from hub
-    * Connection Failure - Client continues without hub connection :(
-1. Client boots up display and menu
-1. Starting now the teacher can send a message to the students using the broadcast functions
-    * I wish I could have done this message sending via USB to the hub so it knows what to send. As of now it will have to be preprogrammed with what to send after boot.
-1. Both picos sit in a while loop doing simple processing
-
+There are two folders in this repo:
+- Spark_Setup - These files NEED to be added to each pico that are on the boards. This software allows the LEDs below each flip switch to change based on switch state. This software also drives the display on the board.
+- Optional_Internet_Hub - If you choose to not setup the teacher hub spftware, this folder can be ignored. This software is used by flashing onto a seperate pico that will attempt to connect to all student boards it finds closeby. The teacher can then use this connection to commucation with the students by controlling their boards.
+	
+These folders are explained more once clicked on above.
+	
 ### TO DOWNLOAD AND USE CONTENT
 
-Please see the releases tab on the right side of your screen. This should download a zip folder that contains folders of code that needs to be flashed to the teacher and student picos.
+Please see the releases tab on the right side of your screen. This should download a zip folder that contains folders of code that needs to be flashed to the teacher and student picos. To flash code to the pico, please follow the directions below:
+
+1. Download ZIP folder as shown above.
+1. Unzip the folder to an eazy to access location.
+1. Go to Spark_Setup -> Firmware and grab the only file in this folder.
+1. Plug your Pico into your computer while holding the only button on the top of the Pico. This should open file explorer on your computer screen.
+1. Copy the file stored at Spark_Setup/Firmware/ and copy it to the folder that popped up after plugging in your pico.
+1. Unplug your pico and then plug back in WITHOUT holding the button.
+1. Copy all files in Spark_Setup/Software to the new window that opens
+1. Unplug Pico and place on board.
+1. Turn board on, everything should come to life!
