@@ -17,6 +17,7 @@ Please see the releases tab on the right side of your screen. This should downlo
 	- If nothing opens, open File Explorer manually and look for a drive called RPI-RP2.
 1. Copy the file stored at Spark_Setup/Firmware/ and copy it to the folder that popped up after plugging in your pico.
 1. Unplug your pico, wait a few seconds, then plug back in WITHOUT holding the button.
-1. Copy all files in Spark_Setup/Software to the new window that opens
+1. Copy all files in Spark_Setup/Software/ to the new window that opens
 1. Unplug Pico and place on board.
 1. Turn board on, everything should come to life!
+	- If it does not work, restart from step 1.
